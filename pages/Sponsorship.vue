@@ -1,12 +1,11 @@
 <template>
 	<main>
 		<TheTopbar />
-		<p>dwdadwadwdawdaw</p>
 	</main>
 </template>
 <router>
 {
-    path: '/',
+    path: '/patenschaft',
 }
 </router>
 <script>

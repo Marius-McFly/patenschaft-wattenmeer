@@ -1,14 +1,15 @@
 <template>
 	<main>
 		<TheTopbar />
-		<p>dwdadwadwdawdaw</p>
 	</main>
 </template>
+
 <router>
 {
-    path: '/',
+    path: '/impressum',
 }
 </router>
+
 <script>
 export default {}
 </script>

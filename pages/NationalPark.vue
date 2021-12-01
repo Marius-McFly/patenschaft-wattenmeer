@@ -1,14 +1,9 @@
 <template>
 	<main>
 		<TheTopbar />
-		<p>dwdadwadwdawdaw</p>
 	</main>
 </template>
-<router>
-{
-    path: '/',
-}
-</router>
+
 <script>
 export default {}
 </script>

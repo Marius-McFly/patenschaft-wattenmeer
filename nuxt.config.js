@@ -33,9 +33,15 @@ export default {
 	buildModules: [
 		// https://go.nuxtjs.dev/eslint
 		'@nuxtjs/eslint-module',
+
 		// https://go.nuxtjs.dev/tailwindcss
 		'@nuxtjs/tailwindcss',
-		'@nuxtjs/svg'
+
+		// https://www.npmjs.com/package/@nuxtjs/svg
+		'@nuxtjs/svg',
+
+		// https://github.com/nuxt-community/router-extras-module
+		'@nuxtjs/router-extras'
 	],
 
 	// Modules: https://go.nuxtjs.dev/config-modules
