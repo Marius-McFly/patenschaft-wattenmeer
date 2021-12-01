@@ -18,6 +18,27 @@ module.exports = {
 				sans: ['Lexend', 'Arial', 'sans-serif']
 			},
 
+			colors: {
+				transparent: 'transparent',
+				current: 'currentColor',
+				blue: {
+					default: '#00aed6',
+					100: '#eef9ff'
+				},
+
+				beige: {
+					default: '#efe7d0'
+				},
+
+				black: {
+					default: '#2e3b3d'
+				},
+
+				green: {
+					default: '#00d673'
+				}
+			},
+
 			screens: {
 				mobile: '318px',
 				phablet: '738px',
