@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div />
+		<div v-html="require(`~/static/svg/wattenmeer-logo.svg?raw`)" />
 		<ul>
 			<li>Huhu</li>
 		</ul>
