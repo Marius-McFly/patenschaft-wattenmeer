@@ -8,7 +8,7 @@
 			<li
 				v-for="navigationItem in navigationItems"
 				:key="navigationItem.name"
-				class="mb-4"
+				class="mb-4 last:mb-0"
 			>
 				{{ navigationItem.name }}
 			</li>

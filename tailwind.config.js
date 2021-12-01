@@ -1,4 +1,5 @@
 module.exports = {
+	mode: 'jit',
 	purge: {
 		enabled: process.env.NODE_ENV === 'production',
 		content: [
@@ -15,6 +16,66 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				sans: ['Lexend', 'Arial', 'sans-serif']
+			},
+
+			screens: {
+				mobile: '318px',
+				phablet: '738px',
+				tablet: '942px',
+				desktop: '1280px',
+				widescreen: '1600px',
+				'widescreen-xl': '1773px'
+			},
+
+			fontSize: {
+				xs: [
+					'18px',
+					{
+						lineHeight: '27px'
+					}
+				],
+				sm: [
+					'20px',
+					{
+						lineHeight: '30px'
+					}
+				],
+				tiny: [
+					'24px',
+					{
+						lineHeight: '36px'
+					}
+				],
+				base: [
+					'32px',
+					{
+						lineHeight: '41px'
+					}
+				],
+				lg: [
+					'40px',
+					{
+						lineHeight: '50px'
+					}
+				],
+				xl: [
+					'48px',
+					{
+						lineHeight: '57.6px'
+					}
+				],
+				'2xl': [
+					'64px',
+					{
+						lineHeight: '76.8px'
+					}
+				],
+				'3xl': [
+					'80px',
+					{
+						lineHeight: '112px'
+					}
+				]
 			}
 		}
 	},
