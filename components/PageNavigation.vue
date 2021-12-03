@@ -3,10 +3,10 @@
 		<li
 			v-for="navigationItem in navigationItems"
 			:key="navigationItem.name"
-			class="mb-4 last:mb-0"
+			class="mb-4 last:mb-0 text-base font-normal cursor-pointer"
 		>
 			<NuxtLink
-				class="inline-block after:block after:w-0 cursor-pointer after:h-[1px] after:bg-black after:transition-[width] after:duration-300 hover:after:w-full"
+				class="inline-block after:block after:w-0 cursor-pointer after:h-[2px] after:bg-black-default after:transition-[width] after:duration-500 hover:after:w-full"
 				:to="navigationItem.routePath"
 			>
 				{{ navigationItem.name }}
