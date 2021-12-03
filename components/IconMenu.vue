@@ -3,10 +3,10 @@
 		class="w-8 h-8 cursor-pointer"
 		@click="$emit('click')"
 	>
-		<div class="line-top h-[3px] w-full bg-black-default mb-2 rounded" />
-		<div class="line-middle h-[3px] w-8 bg-black-default mb-2 rounded fixed" />
-		<div class="line-middle h-[3px] w-full bg-black-default mb-2 rounded" />
-		<div class="line-bottom h-[3px] w-full bg-black-default rounded" />
+		<div class="line-top h-[4px] w-full bg-black-default mb-2 rounded" />
+		<div class="line-middle h-[4px] w-8 bg-black-default mb-2 rounded fixed" />
+		<div class="line-middle h-[4px] w-full bg-black-default mb-2 rounded" />
+		<div class="line-bottom h-[4px] w-full bg-black-default rounded" />
 	</div>
 </template>
 
