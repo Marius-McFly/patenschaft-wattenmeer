@@ -62,7 +62,7 @@ module.exports = {
 				sm: [
 					'16px',
 					{
-						lineHeight: '24px'
+						lineHeight: '27px'
 					}
 				],
 				tiny: [
