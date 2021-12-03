@@ -24,6 +24,7 @@
 				:button-text="content.imageText[1].buttonText"
 			/>
 		</div>
+		<TheFooter />
 	</main>
 </template>
 <router>
