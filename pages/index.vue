@@ -7,6 +7,7 @@
 				:subtitle="content.pageHero.subtitle"
 				:image="content.pageHero.imagePath"
 				:button-text="content.pageHero.buttonText"
+				is-landing
 			/>
 		</div>
 		<div class="custom-container">
@@ -14,7 +15,8 @@
 				:title="content.imageText[0].title"
 				:text="content.imageText[0].text"
 				:image="content.imageText[0].imagePath"
-				class="mb-12"
+				class="mb-12 desktop:mb-20"
+				is-first-item
 			/>
 			<ImageText
 				:text="content.imageText[1].text"
