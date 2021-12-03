@@ -8,7 +8,7 @@
   }
 
   .custom-container {
-    @apply px-8 py-20 phablet:px-40 tablet:px-64 desktop:px-0 desktop:max-w-[1024px] desktop:mx-auto widescreen:max-w-[1304px] widescreen:py-24;
+    @apply px-8 py-20 desktop:py-[104px] phablet:px-40 tablet:px-64 desktop:px-0 desktop:max-w-[1024px] desktop:mx-auto widescreen:max-w-[1304px];
   }
 
   .custom-container-small {
@@ -16,19 +16,19 @@
   }
 
   h1 {
-    @apply text-lg font-semibold;
+    @apply text-lg font-semibold tablet:text-4xl desktop:text-3xl;
   }
 
   h2 {
-    @apply text-tiny font-light;
+    @apply text-tiny font-light desktop:text-base;
   }
 
   h3 {
-    @apply text-base font-bold;
+    @apply text-base font-bold desktop:text-2xl;
   }
 
   p {
-      @apply text-sm;
+      @apply text-sm tablet:text-tiny font-normal;
   }
 
 }
