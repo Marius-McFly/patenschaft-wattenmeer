@@ -9,5 +9,7 @@
 }
 </router>
 <script>
-export default {}
+export default {
+	name: 'Sponsorship'
+}
 </script>

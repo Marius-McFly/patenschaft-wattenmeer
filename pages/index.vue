@@ -31,7 +31,7 @@
 </router>
 <script>
 export default {
-
+	name: 'Landing',
 	data () {
 		return {
 			content: {
