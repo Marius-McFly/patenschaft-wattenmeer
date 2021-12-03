@@ -1,28 +1,30 @@
 <template>
 	<nav
-		class="py-4 px-6 transition-all duration-500 ease-in-out bg-gray-300"
-		:class="isOpen ? 'h-screen bg-opacity-90' : 'h-20 bg-opacity-50'"
+		class="fixed flex justify-center items-center z-[1000] w-full py-4 px-6 transition-all duration-500 ease-in-out bg-white shadow-2xl"
+		:class="isOpen ? 'h-screen py-20' : 'h-20'"
 	>
-		<NuxtLink to="/">
+		<div>
+			<NuxtLink to="/">
+				<div
+					class="w-[104px] z-10 fixed left-8 top-4"
+					v-html="require(`~/static/svg/wattenmeer-logo.svg?raw`)"
+				/>
+			</NuxtLink>
 			<div
-				class="max-w-[104px] relative z-10"
-				v-html="require(`~/static/svg/wattenmeer-logo.svg?raw`)"
-			/>
-		</NuxtLink>
-		<div
-			class="flex items-center w-full justify-end fixed right-8 top-8 desktop:hidden z-0"
-		>
-			<IconMenu
-				class=""
-				:class="isOpen ? 'active' : ''"
-				@click="toggleNav"
+				class="flex items-center w-full justify-end fixed right-8 top-8 desktop:hidden z-0"
+			>
+				<IconMenu
+					class=""
+					:class="isOpen ? 'active' : ''"
+					@click="toggleNav"
+				/>
+			</div>
+			<PageNavigation
+				class="transition-all duration-[375ms] ease-in-out desktop:hidden"
+				:class="isOpen ? 'opacity-100' : 'opacity-0 transform translate-y-[-480px]'"
+				:navigation-items="navigationItems"
 			/>
 		</div>
-		<PageNavigation
-			class="transition-all mt-12 duration-[375ms] ease-in-out desktop:hidden"
-			:class="isOpen ? 'opacity-100 transform' : 'opacity-0 transform translate-y-[-480px]'"
-			:navigation-items="navigationItems"
-		/>
 	</nav>
 </template>
 
