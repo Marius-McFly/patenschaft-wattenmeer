@@ -4,6 +4,31 @@
 
 @layer base {
   body {
-    @apply font-light font-sans;
+    @apply font-light font-sans text-black-default;
   }
+
+  .custom-container {
+    @apply px-8 py-20 phablet:px-40 tablet:px-64 desktop:px-0 desktop:max-w-[1024px] desktop:mx-auto widescreen:max-w-[1304px] widescreen:py-24;
+  }
+
+  .custom-container-small {
+    @apply px-8 py-20 phablet:px-40 tablet:px-64 desktop:px-96 widescreen:max-w-[800px] widescreen:mx-auto widescreen:px-0 widescreen:py-24;
+  }
+
+  h1 {
+    @apply text-lg font-semibold;
+  }
+
+  h2 {
+    @apply text-tiny font-light;
+  }
+
+  h3 {
+    @apply text-base font-bold;
+  }
+
+  p {
+      @apply text-sm;
+  }
+
 }
