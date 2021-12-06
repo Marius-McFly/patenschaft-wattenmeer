@@ -8,7 +8,7 @@
   }
 
   .custom-container {
-    @apply px-8 py-20 desktop:py-[104px] phablet:px-40 tablet:px-64 desktop:px-0 desktop:max-w-[1024px] desktop:mx-auto widescreen:max-w-[1304px];
+    @apply px-8 py-20 desktop:py-[104px] phablet:px-40 tablet:px-64 desktop:px-0 desktop:max-w-[1200px] desktop:mx-auto;
   }
 
   .custom-container-small {
@@ -16,7 +16,7 @@
   }
 
   h1 {
-    @apply text-lg font-semibold tablet:text-4xl desktop:text-3xl;
+    @apply text-lg font-semibold tablet:text-xl desktop:text-3xl;
   }
 
   h2 {
