@@ -20,7 +20,7 @@
 				</AppButton>
 			</div>
 		</div>
-		<div :class="['relative mb-14 desktop:flex-1', {'desktop:order-3 desktop:ml-32': isFirstItem}, {'order-1 desktop:mr-32': !isFirstItem}]">
+		<div :class="['relative mobile:mb-16 desktop:mb-0 desktop:flex-1', {'desktop:order-3 desktop:ml-32': isFirstItem}, {'order-1 desktop:mr-32': !isFirstItem}]">
 			<img class="w-full relative z-[3] rounded-3xl" :src="image" alt="">
 			<div class="bg-blue-100 z-[2] h-full absolute top-0 w-full transform rotate-[-5deg] rounded-3xl" />
 			<div class="bg-beige-default h-full absolute z-[1] top-0 w-full transform rotate-[-10deg] rounded-3xl" />
