@@ -1,21 +1,19 @@
 <template>
 	<main>
 		<TheTopbar />
-		<div class="h-screen">
-			<PageHero
-				:title="content.pageHero.title"
-				:subtitle="content.pageHero.subtitle"
-				:image="content.pageHero.imagePath"
-				:button-text="content.pageHero.buttonText"
-				is-landing
-			/>
-		</div>
+		<PageHero
+			:title="content.pageHero.title"
+			:subtitle="content.pageHero.subtitle"
+			:full-hero-image="content.pageHero.imagePath"
+			:button-text="content.pageHero.buttonText"
+			is-landing
+		/>
 		<div class="custom-container">
 			<ImageText
 				:title="content.imageText[0].title"
 				:text="content.imageText[0].text"
 				:image="content.imageText[0].imagePath"
-				class="mb-12 desktop:mb-20"
+				class="mb-24 phablet:mb-30 tablet:mb-40"
 				is-first-item
 			/>
 			<ImageText
