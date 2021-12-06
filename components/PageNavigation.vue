@@ -1,9 +1,9 @@
 <template>
-	<ul class="flex flex-col items-center">
+	<ul class="grid desktop:grid-cols-[max-content,max-content,max-content,max-content] mobile:gap-4 desktop:gap-10">
 		<li
 			v-for="navigationItem in navigationItems"
 			:key="navigationItem.name"
-			class="mb-4 last:mb-0 text-base font-normal cursor-pointer"
+			class="text-base font-normal cursor-pointer text-center desktop:text-tiny flex items-center justify-center justify-self-center"
 		>
 			<NuxtLink
 				class="inline-block after:block after:w-0 cursor-pointer after:h-[2px] after:bg-black-default after:transition-[width] after:duration-500 hover:after:w-full"
