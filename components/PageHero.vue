@@ -1,5 +1,5 @@
 <template>
-	<div class="h-screen">
+	<div :class="[{'pt-18 min-h-[750px] max-h-[1080px] h-full desktop:h-screen': !fullHeroImage}, {'h-screen': fullHeroImage} ]">
 		<img
 			v-if="fullHeroImage"
 			:src="fullHeroImage"
@@ -9,7 +9,7 @@
 		<img
 			v-if="!fullHeroImage"
 			:src="images[0]"
-			class="absolute mobile:top-1/2 mobile:object-[100px] phablet:object-[200px] phablet:top-1/2 tablet:top-1/4 desktop:top-64 desktop:left-auto z-30 opacity-40 desktop:object-[500px]"
+			class="absolute top-1/3 object-[100px] mobile:top-2/4 phablet:top-1/4 tablet:block tablet:object-[200px] tablet:top-1/4 desktop:top-64 desktop:left-auto z-30 opacity-40 desktop:object-[500px]"
 			alt=""
 		>
 		<div
@@ -18,25 +18,31 @@
 		/>
 		<div
 			v-if="fullHeroImage"
-			class="absolute opacity-50 bg-black-default h-full w-full desktop:max-w-[1920px] widescreen:max-w-[3840px] rounded-br-[100px] rounded-bl-[100px]"
+			class="absolute opacity-80 bg-gradient-to-r from-black-default h-full w-full desktop:max-w-[1920px] widescreen:max-w-[3840px] rounded-br-[100px] rounded-bl-[100px]"
 		/>
-		<div :class="['relative z-10 flex flex-col justify-center text-white h-full w-full', {'text-black-default': !fullHeroImage }]">
-			<div :class="['custom-container pt-20 w-full', {'flex pb-0': !fullHeroImage}]">
+		<div :class="['relative z-10 flex-col h-full w-full flex', {'text-black-default justify-start pt-32 desktop:pt-0 desktop:justify-center': !fullHeroImage }, {'justify-center text-white': fullHeroImage } ]">
+			<div :class="['custom-container w-full', {'flex': !fullHeroImage}, {'pt-20 desktop:pt-[128px]': fullHeroImage}]">
 				<div :class="{'flex-1 desktop:mr-20': !fullHeroImage}">
-					<h1 class="mb-2 desktop:max-w-[800px]">
+					<h1 class="mb-2 desktop:max-w-[800px] desktop:mb-4">
 						{{ title }}
 					</h1>
 					<div
 						v-if="fullHeroImage"
-						class="w-[104px] bg-white h-1 rounded mb-4"
+						:class="[{'w-[104px] bg-white h-1 rounded mb-4 desktop:mb-8': !fullHeroImage}, {'mt-4 mb-8 w-[104px] bg-white h-1 rounded' :fullHeroImage} ]"
 					/>
-					<h2 class="mb-8 desktop:mb-12 desktop:max-w-[600px] widescreen:mb-16">
+					<h2 :class="['desktop:max-w-[600px]', {'mb-8 desktop:mb-12 widescreen:mb-16': !quoteAuthor }, {'phablet:text-base desktop:text-lg': quoteAuthor } ]">
 						{{ subtitle }}
 					</h2>
+					<p
+						v-if="quoteAuthor"
+						:class="{'mb-8 mt-4 desktop:mb-12 widescreen:mb-16': quoteAuthor }"
+					>
+						{{ quoteAuthor }}
+					</p>
 					<div :class="{'mobile:block flex-1 desktop:hidden': !fullHeroImage}">
 						<img
 							v-if="!fullHeroImage"
-							class="mobile:mb-12 phablet:mb-20 mobile:rounded-3xl desktop:rounded-[40px] object-cover shadow-2xl"
+							class="mb-12 rounded-3xl phablet:mb-20 desktop:rounded-[40px] object-cover shadow-2xl"
 							:src="images[1]"
 							alt=""
 						>
@@ -54,7 +60,7 @@
 						{{ buttonText }}
 					</AppButton>
 				</div>
-				<div :class="{'mobile:hidden flex-1 desktop:block': !fullHeroImage}">
+				<div :class="{'hidden flex-1 desktop:block': !fullHeroImage}">
 					<img
 						v-if="!fullHeroImage"
 						class="mobile:rounded-3xl desktop:rounded-[40px] object-cover shadow-2xl"
@@ -81,6 +87,11 @@ export default {
 		subtitle: {
 			type: String,
 			required: true
+		},
+
+		quoteAuthor: {
+			type: String,
+			default: ''
 		},
 
 		fullHeroImage: {
