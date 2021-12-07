@@ -1,5 +1,5 @@
 <template>
-	<main class="bg-blue-100">
+	<main class="bg-white">
 		<TheTopbar />
 		<div class="h-screen w-full flex flex-col justify-end text-center">
 			<div class="h-full flex flex-col justify-center pt-80 desktop:pt-60 px-6">
