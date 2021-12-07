@@ -1,5 +1,5 @@
 <template>
-	<main>
+	<main class="overflow-hidden">
 		<TheTopbar />
 		<PageHero
 			:title="content.pageHero.title"
@@ -8,7 +8,7 @@
 			:button-text="content.pageHero.buttonText"
 			is-landing
 		/>
-		<div class="custom-container">
+		<div class="custom-container py-20 desktop:py-[104px]">
 			<ImageText
 				:title="content.imageText[0].title"
 				:text="content.imageText[0].text"
