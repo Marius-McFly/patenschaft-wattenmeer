@@ -30,12 +30,12 @@
 						v-if="fullHeroImage"
 						:class="[{'w-[104px] bg-white h-1 rounded mb-4 desktop:mb-8': !fullHeroImage}, {'mt-4 mb-8 w-[104px] bg-white h-1 rounded' :fullHeroImage} ]"
 					/>
-					<h2 :class="['desktop:max-w-[600px]', {'mb-8 desktop:mb-12 widescreen:mb-16': !quoteAuthor }, {'phablet:text-base desktop:text-lg': quoteAuthor } ]">
+					<h2 :class="[{'mb-8 desktop:mb-12 widescreen:mb-16 desktop:max-w-[600px]': !quoteAuthor }, {'phablet:text-base desktop:text-lg desktop:max-w-[640px]': quoteAuthor } ]">
 						{{ subtitle }}
 					</h2>
 					<p
 						v-if="quoteAuthor"
-						:class="{'mb-8 mt-4 desktop:mb-12 widescreen:mb-16': quoteAuthor }"
+						:class="{'mb-8 mt-4 desktop:mb-12 widescreen:mb-16 desktop:text-base font-thin': quoteAuthor }"
 					>
 						{{ quoteAuthor }}
 					</p>

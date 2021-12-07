@@ -9,7 +9,7 @@
 				v-html="require(`~/static/svg/${item.icon}?raw`)"
 			/>
 			<div v-if="!isIconCard">
-				<p class="text-lg font-thin phablet:text-2xl tablet:text-3xl">
+				<p class="text-lg font-thin mb-2 phablet:mb-4 phablet:text-2xl tablet:text-3xl">
 					{{ item.number }}
 				</p>
 				<h4 class="font-semibold text-[20px] leading-snug mb-2 phablet:mb-4 phablet:text-lg">
