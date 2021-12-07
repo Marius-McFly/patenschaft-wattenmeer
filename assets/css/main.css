@@ -8,7 +8,7 @@
   }
 
   .custom-container {
-    @apply px-8 py-20 desktop:py-[104px] phablet:px-40 tablet:px-64 desktop:px-0 desktop:max-w-[1200px] desktop:mx-auto;
+    @apply px-8 phablet:px-40 tablet:px-64 desktop:px-0 desktop:max-w-[1200px] desktop:mx-auto;
   }
 
   .custom-container-small {
@@ -24,7 +24,7 @@
   }
 
   h3 {
-    @apply text-base font-bold desktop:text-2xl;
+    @apply text-base font-bold phablet:text-lg desktop:text-xl;
   }
 
   p {
