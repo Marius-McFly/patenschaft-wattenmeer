@@ -17,6 +17,7 @@
 				is-first-item
 			/>
 			<ImageText
+				:title="content.imageText[1].title"
 				:text="content.imageText[1].text"
 				:image="content.imageText[1].imagePath"
 				:button-text="content.imageText[1].buttonText"
@@ -49,6 +50,7 @@ export default {
 						imagePath: '/img/sevak-oJbF_4qfrjE-unsplash.jpg'
 					},
 					{
+						title: 'UNESCO Weltnaturerbe',
 						text: 'Mit der Anerkennung als UNESCO Weltnaturerbe sind Deutschland, Dänemark und die Niederlande auch gegenüber der Weltgemeinschaft verpflichtet, den außergewöhnlichen universellen Wert der Natur im Wattenmeer zu erhalten. Darüber hinaus gehört Naturschutz zu den Funktionen eines UNESCO-Biosphärenreservats. ',
 						imagePath: '/img/christian-paul-stobbe-bJEasxPTOUw-unsplash.jpg',
 						buttonText: 'Hier mitmachen →'
