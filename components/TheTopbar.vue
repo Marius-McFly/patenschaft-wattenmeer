@@ -35,7 +35,7 @@ export default {
 			navigationItems: [
 				{
 					name: 'Nationalpark',
-					routePath: '/nationalpark'
+					routePath: '/'
 				},
 
 				{
@@ -56,7 +56,7 @@ export default {
 
 				{
 					name: 'Besuchen',
-					routePath: '/besuchen'
+					routePath: '/'
 
 				},
 
