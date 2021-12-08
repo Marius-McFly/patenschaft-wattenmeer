@@ -1,6 +1,6 @@
 <template>
 	<div
-		:class="['grid grid-cols-1 desktop:grid-cols-2 w-full', {'gap-20 desktop:gap-24': isIconCard }, {'gap-20 desktop:gap-40': !isIconCard }]"
+		:class="['grid grid-cols-1 desktop:grid-cols-2 w-full max-w-lg phablet:max-w-full', {'gap-20 desktop:gap-24': isIconCard }, {'gap-20 desktop:gap-40': !isIconCard }]"
 	>
 		<AppCard
 			v-for="item in items"
