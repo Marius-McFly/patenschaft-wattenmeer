@@ -29,6 +29,7 @@
 				<AppButton
 					class="mt-20"
 					border-button
+					:link="'/mitmachen'"
 				>
 					{{ content.cardSection.buttonText }}
 				</AppButton>
@@ -54,7 +55,7 @@ export default {
 					subtitle: 'Helfe mit das Wattenmeer zu erhalten und es vor einer Verschmutzung oder äußeren Einflüssen zu bewahren. Deine Patenschaft kann etwas bewegen',
 					images: [
 						'/svg/wattenmeer-bildmarke.svg',
-						'img/kelli-mcclintock-wBgAVAGjzFg-unsplash.jpg'
+						'/img/kelli-mcclintock-wBgAVAGjzFg-unsplash.jpg'
 					],
 					buttonText: 'Hier mitmachen →'
 				},
