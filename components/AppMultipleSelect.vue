@@ -12,7 +12,7 @@
 				:type="item.type"
 				:name="item.name"
 				:value="item.value"
-				class="order-1 mr-2 h-4 w-4 bg-white appearance-none z-10 checked:bg-green-default rounded transition ease-in-out duration-500"
+				class="order-1 cursor-pointer mr-2 h-4 w-4 bg-white appearance-none z-10 checked:bg-green-default rounded transition ease-in-out duration-500"
 			>
 		</div>
 	</div>

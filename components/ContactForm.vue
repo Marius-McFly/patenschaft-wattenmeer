@@ -163,7 +163,7 @@ export default {
 		handleSubmit () {
 			if (this.inputDataCollection.email[0]) {
 				this.onSubmit()
-				this.clearForm()
+				setTimeout(() => { this.clearForm() }, 3000)
 			}
 		}
 	}
