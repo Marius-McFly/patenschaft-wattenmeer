@@ -3,7 +3,7 @@
 		class="fixed z-[1000] w-full flex items-center justify-center py-4 px-6 transition-all duration-500 ease-in-out bg-white shadow-2xl desktop:h-40"
 		:class="isOpen ? 'h-screen py-20' : 'h-20'"
 	>
-		<div class="desktop:grid desktop:grid-cols-[max-content,max-content,max-content] desktop:items-center desktop:justify-center">
+		<div :class="['desktop:grid desktop:grid-cols-[max-content,max-content,max-content] desktop:items-center desktop:justify-center', {'h-0': isOpen}, {'h-20': !isOpen}]">
 			<PageNavigation class="hidden desktop:grid justify-self-center" :navigation-items="navigationItems.slice(0, 4)" />
 			<NuxtLink to="/">
 				<img class="top-4 z-50 left-8 fixed w-full max-w-[104px] desktop:static desktop:mx-14 desktop:max-w-[180px]" src="/svg/wattenmeer-logo.svg" alt="">
