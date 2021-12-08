@@ -1,5 +1,5 @@
 <template>
-	<footer class="relative pt-40 text-left">
+	<footer class="relative pt-20 text-left">
 		<div
 			class="text-blue-default absolute h-36 bottom-60 desktop:bottom-32 w-full z-10 opacity-30"
 			v-html="require(`~/static/svg/shape.svg?raw`)"
