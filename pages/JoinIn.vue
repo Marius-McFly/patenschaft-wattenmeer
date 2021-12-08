@@ -7,7 +7,7 @@
 			:quote-author="content.pageHero[0].quoteAuthor"
 			:full-hero-image="content.pageHero[0].imagePath"
 			:button-text="content.pageHero[0].buttonText"
-			is-landing
+			is-join-in
 		/>
 		<div class="custom-container flex items-center flex-col phablet:block py-20 desktop:py-[104px] text-left">
 			<div class="mb-12 max-w-2xl phablet:mb-20 desktop:mb-[104px]">

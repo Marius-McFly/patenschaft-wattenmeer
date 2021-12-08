@@ -9,7 +9,7 @@
 		<img
 			v-if="!fullHeroImage"
 			:src="images[0]"
-			class="absolute top-1/3 object-[100px] mobile:top-2/4 phablet:top-1/4 tablet:block tablet:object-[200px] tablet:top-1/4 desktop:top-64 desktop:left-auto z-30 opacity-40 desktop:object-[500px]"
+			class="absolute top-1/3 object-[100px] mobile:top-2/4 phablet:top-1/4 tablet:block tablet:object-[200px] tablet:top-1/4 desktop:top-64 desktop:left-auto opacity-40 desktop:object-[500px] z-20"
 			alt=""
 		>
 		<div
@@ -20,8 +20,8 @@
 			v-if="fullHeroImage"
 			:class="['absolute opacity-80 bg-gradient-to-r from-black-default h-full w-full desktop:max-w-[1920px] widescreen:max-w-[3840px] desktop:rounded-br-[100px] desktop:rounded-bl-[100px] rounded-bl-[40px] rounded-br-[40px]', {'rounded-tl-[40px] rounded-tr-[40px] dektop:rounded-tl-[100px] desktop:rounded-tr-[100px]': isSection} ]"
 		/>
-		<div :class="['relative z-10 flex-col h-full w-full flex', {'text-black-default justify-start pt-32 desktop:pt-0 desktop:justify-center': !fullHeroImage }, {'justify-center text-white': fullHeroImage } ]">
-			<div :class="['custom-container w-full', {'flex': !fullHeroImage}, {'pt-20 desktop:pt-[128px]': fullHeroImage && !isSection}, {'pt-0 desktop:pt-0': fullHeroImage && isSection}]">
+		<div :class="['relative flex-col h-full w-full flex', {'text-black-default justify-start pt-32 desktop:pt-0 desktop:justify-center': !fullHeroImage }, {'justify-center text-white': fullHeroImage } ]">
+			<div :class="['custom-container w-full items-center', {'flex': !fullHeroImage}, {'pt-20 desktop:pt-[128px]': fullHeroImage && !isSection}, {'pt-0 desktop:pt-0': fullHeroImage && isSection}]">
 				<div :class="{'flex-1 desktop:mr-20': !fullHeroImage}">
 					<h1 class="mb-2 desktop:max-w-[800px] desktop:mb-4">
 						{{ title }}
@@ -30,31 +30,54 @@
 						v-if="fullHeroImage"
 						:class="[{'w-[104px] bg-white h-1 rounded mb-4 desktop:mb-8': !fullHeroImage}, {'mt-4 mb-8 w-[104px] bg-white h-1 rounded' :fullHeroImage} ]"
 					/>
-					<h2 :class="[{'mb-8 desktop:mb-12 widescreen:mb-16 desktop:max-w-[600px]': !quoteAuthor }, {'phablet:text-base desktop:text-lg desktop:max-w-[640px]': quoteAuthor } ]">
+					<h2 :class="[{'mb-4 desktop:mb-8 desktop:max-w-[600px]': !quoteAuthor }, {'phablet:text-base desktop:text-lg desktop:max-w-[640px]': quoteAuthor } ]">
 						{{ subtitle }}
 					</h2>
 					<p
 						v-if="quoteAuthor"
-						:class="{'mb-8 mt-4 desktop:mb-12 widescreen:mb-16 desktop:text-base font-thin': quoteAuthor }"
+						class="mb-8 mt-4 desktop:mb-12 widescreen:mb-16"
 					>
 						{{ quoteAuthor }}
 					</p>
+					<div class="mb-8">
+						<p
+							v-if="contactData"
+							class="mb-1 desktop:mb-2"
+						>
+							{{ contactData.first }}
+						</p>
+						<p
+							v-if="contactData"
+							class="mb-1 desktop:mb-2"
+						>
+							{{ contactData.second }}
+						</p>
+						<p
+							v-if="contactData"
+							class="font-bold"
+						>
+							{{ contactData.phone }}
+						</p>
+					</div>
 					<div :class="{'mobile:block flex-1 desktop:hidden': !fullHeroImage}">
 						<img
 							v-if="!fullHeroImage"
-							class="mb-12 rounded-3xl phablet:mb-20 desktop:rounded-[40px] object-cover shadow-2xl"
+							class="mb-12 rounded-3xl phablet:mb-20 desktop:rounded-[40px] object-cover shadow-2xl max-h-[420px] w-full"
 							:src="images[1]"
 							alt=""
 						>
 					</div>
 					<AppButton
-						v-if="fullHeroImage"
+						v-if="fullHeroImage && !isJoinIn"
+						:link="'/mitmachen'"
 						border-button
 					>
 						{{ buttonText }}
 					</AppButton>
 					<AppButton
 						v-if="!fullHeroImage"
+						class="relative z-50"
+						:link="'/mitmachen'"
 						primary-button
 					>
 						{{ buttonText }}
@@ -63,7 +86,7 @@
 				<div :class="{'hidden flex-1 desktop:block': !fullHeroImage}">
 					<img
 						v-if="!fullHeroImage"
-						class="mobile:rounded-3xl desktop:rounded-[40px] object-cover shadow-2xl"
+						class="mobile:rounded-3xl desktop:rounded-[40px] object-cover shadow-2xl max-h-[420px] w-full"
 						:src="images[1]"
 						alt=""
 					>
@@ -104,12 +127,22 @@ export default {
 			default: () => ([])
 		},
 
+		contactData: {
+			type: Object,
+			default: () => ({})
+		},
+
 		buttonText: {
 			type: String,
 			default: ''
 		},
 
 		isSection: {
+			type: Boolean,
+			default: false
+		},
+
+		isJoinIn: {
 			type: Boolean,
 			default: false
 		},
