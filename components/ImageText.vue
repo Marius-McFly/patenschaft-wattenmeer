@@ -11,14 +11,15 @@
 				<p class="mb-12 desktop:mb-8">
 					{{ text }}
 				</p>
-				<AppButton
-					v-if="buttonText"
-					class="hidden desktop:block mt-8 desktop:mt-12"
-					:link="'/mitmachen'"
-					primary-button
-				>
-					{{ buttonText }}
-				</AppButton>
+				<NuxtLink to="/mitmachen">
+					<AppButton
+						v-if="buttonText"
+						class="hidden desktop:block mt-8 desktop:mt-12"
+						primary-button
+					>
+						{{ buttonText }}
+					</AppButton>
+				</NuxtLink>
 			</div>
 		</div>
 		<div :class="['relative mb-8 desktop:mb-0 desktop:flex-1 h-1/2', {'desktop:order-3 desktop:ml-32': isFirstItem}, {'desktop:order-1 desktop:mr-32': !isFirstItem}]">
@@ -26,14 +27,15 @@
 			<div v-if="!isInfographic" class="bg-blue-100 z-[2] h-full absolute top-0 w-full transform rotate-[-5deg] rounded-3xl" />
 			<div v-if="!isInfographic" class="bg-beige-default h-full absolute z-[1] top-0 w-full transform rotate-[-10deg] rounded-3xl" />
 		</div>
-		<AppButton
-			v-if="buttonText"
-			class="block desktop:hidden mt-8 desktop:mt-12"
-			:link="'/mitmachen'"
-			primary-button
-		>
-			{{ buttonText }}
-		</AppButton>
+		<NuxtLink to="/mitmachen">
+			<AppButton
+				v-if="buttonText"
+				class="block desktop:hidden mt-8 desktop:mt-12"
+				primary-button
+			>
+				{{ buttonText }}
+			</AppButton>
+		</NuxtLink>
 	</div>
 </template>
 

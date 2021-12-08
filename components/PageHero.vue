@@ -67,21 +67,23 @@
 							alt=""
 						>
 					</div>
-					<AppButton
-						v-if="fullHeroImage && !isJoinIn"
-						:link="'/mitmachen'"
-						border-button
-					>
-						{{ buttonText }}
-					</AppButton>
-					<AppButton
-						v-if="!fullHeroImage"
-						class="relative z-50"
-						:link="'/mitmachen'"
-						primary-button
-					>
-						{{ buttonText }}
-					</AppButton>
+					<NuxtLink to="/mitmachen">
+						<AppButton
+							v-if="fullHeroImage && !isJoinIn"
+							border-button
+						>
+							{{ buttonText }}
+						</AppButton>
+					</NuxtLink>
+					<NuxtLink :to="title === 'Kontakt' ? '#email' : '/mitmachen'">
+						<AppButton
+							v-if="!fullHeroImage"
+							class="relative z-50"
+							primary-button
+						>
+							{{ buttonText }}
+						</AppButton>
+					</NuxtLink>
 				</div>
 				<div :class="{'hidden flex-1 desktop:block': !fullHeroImage}">
 					<img

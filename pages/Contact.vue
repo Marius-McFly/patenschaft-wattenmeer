@@ -10,7 +10,7 @@
 			is-landing
 		/>
 		<div class="py-20 desktop:py-[104px]">
-			<div class="custom-container py-20 desktop:px-40 desktop:py-[104px] bg-blue-default desktop:rounded-[80px] mobile:rounded-[40px] phablet:rounded-[60px] flex flex-col items-start">
+			<div id="email" class="custom-container py-20 desktop:px-40 desktop:py-[104px] bg-blue-default desktop:rounded-[80px] mobile:rounded-[40px] phablet:rounded-[60px] flex flex-col items-start">
 				<h3 class="text-white">
 					{{ content.formSection.title }}
 				</h3>

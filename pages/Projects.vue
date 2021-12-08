@@ -26,13 +26,14 @@
 					:items="content.cardSection.cardItems"
 					is-icon-card
 				/>
-				<AppButton
-					class="mt-20"
-					border-button
-					:link="'/mitmachen'"
-				>
-					{{ content.cardSection.buttonText }}
-				</AppButton>
+				<NuxtLink to="/mitmachen">
+					<AppButton
+						class="mt-20"
+						border-button
+					>
+						{{ content.cardSection.buttonText }}
+					</AppButton>
+				</NuxtLink>
 			</div>
 		</div>
 		<TheFooter />

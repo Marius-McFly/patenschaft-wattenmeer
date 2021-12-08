@@ -53,7 +53,7 @@
 			>
 				<div class="h-[400px] w-full mx-6 desktop:w-[800px] bg-white mobile:rounded-[40px] flex flex-col justify-center items-center">
 					<div class="text-green-default mb-4 desktop:mb-6" v-html="require(`~/static/svg/icon-awesome-check-circle.svg?raw`)" />
-					<p class="text-tiny phablet:text-base desktop:text-lg font-black text-black-default w-full max-w-[600px] text-center">
+					<p class="text-tiny phablet:text-base desktop:text-lg font-black text-black-default w-full text-center">
 						Vielen Dank für deine Anfrage {{ inputDataCollection.firstName[0] }}.<br> Wir melden uns umgehend.
 					</p>
 				</div>
@@ -163,6 +163,7 @@ export default {
 		handleSubmit () {
 			if (this.inputDataCollection.email[0]) {
 				this.onSubmit()
+				this.clearForm()
 			}
 		}
 	}
