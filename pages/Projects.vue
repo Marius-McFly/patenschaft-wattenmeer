@@ -72,26 +72,26 @@ export default {
 					buttonText: 'Hier mitmachen →',
 					cardItems: [
 						{
-							icon: 'icon-awesome-envira.svg',
+							icon: 'leaf-icon.svg',
 							text: 'Förderung des Umweltbewusstseins und der Umwelterziehung'
 						},
 						{
-							icon: 'icon-awesome-hands-helping.svg',
+							icon: 'hands-helping-icon.svg',
 							text: 'Förderung von Projekten zur nachhaltigen Entwicklung der Wattenmeerregion'
 
 						},
 						{
-							icon: 'icon-awesome-hand-holding.svg',
+							icon: 'hands-icon.svg',
 							text: 'Hebung von Bedeutung und Ansehen des Nationalparks, des Biosphärenreservates und des Weltnaturerbes'
 
 						},
 						{
-							icon: 'icon-awesome-globe-europe.svg',
+							icon: 'globe-icon.svg',
 							text: 'Nationalen und internationalen Zusammenarbeit'
 
 						},
 						{
-							icon: 'icon-awesome-hands.svg',
+							icon: 'hand-holding-icon.svg',
 							text: 'Erhaltung der natürlichen Lebensräume und Lebensgemeinschaften samt ihrer Pflanzen – und Tierwelt'
 
 						}

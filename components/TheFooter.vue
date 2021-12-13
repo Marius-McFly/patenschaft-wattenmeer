@@ -34,21 +34,21 @@
 						href="https://www.youtube.com/"
 						class="hover:text-black-default transition duration-500"
 					>
-						<div class="mr-4 desktop:mr-8 w-9" v-html="require(`~/static/svg/icon-awesome-youtube.svg?raw`)" />
+						<div class="mr-4 desktop:mr-8 w-9" v-html="require(`~/static/svg/youtube-icon.svg?raw`)" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.facebook.com/"
 						class="hover:text-black-default transition duration-500"
 					>
-						<div class="mr-4 desktop:mr-8 w-9" v-html="require(`~/static/svg/icon-awesome-facebook.svg?raw`)" />
+						<div class="mr-4 desktop:mr-8 w-8" v-html="require(`~/static/svg/facebook-icon.svg?raw`)" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.instagram.com/"
 						class="hover:text-black-default transition duration-500"
 					>
-						<div class="w-8" v-html="require(`~/static/svg/icon-awesome-instagram.svg?raw`)" />
+						<div class="w-8" v-html="require(`~/static/svg/instagram-icon.svg?raw`)" />
 					</a>
 				</div>
 				<p class="text-xs desktop:max-w-[264px]">

@@ -43,6 +43,14 @@
 				Zurück
 			</AppButton>
 		</div>
+		<div class="max-w-xl mt-10">
+			<p class="font-bold mb-2">
+				*Hinweis:
+			</p>
+			<p class="font-light">
+				Um eure Anfrage beantworten zu können, füllt bitte die mit * markierten Formularfelder vollständig aus.
+			</p>
+		</div>
 		<transition
 			name="swipe"
 			mode="out-in"
@@ -52,7 +60,7 @@
 				class="fixed z-[1000] bg-opacity-50 inset-0 h-screen w-full bg-black-default flex justify-center items-center"
 			>
 				<div class="h-[400px] w-full mx-6 desktop:w-[800px] bg-white mobile:rounded-[40px] flex flex-col justify-center items-center">
-					<div class="text-green-default mb-4 desktop:mb-6" v-html="require(`~/static/svg/icon-awesome-check-circle.svg?raw`)" />
+					<div class="text-green-default mb-4 desktop:mb-6" v-html="require(`~/static/svg/check-circle-icon.svg?raw`)" />
 					<p class="text-tiny phablet:text-base desktop:text-lg font-black text-black-default w-full text-center">
 						Vielen Dank für deine Anfrage {{ inputDataCollection.firstName[0] }}.<br> Wir melden uns umgehend.
 					</p>
@@ -110,7 +118,7 @@ export default {
 					{
 						name: 'email',
 						type: 'text',
-						label: 'E-Mail'
+						label: 'E-Mail*'
 					}
 				],
 				radioItems: [
