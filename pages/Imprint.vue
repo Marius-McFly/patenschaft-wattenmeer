@@ -128,7 +128,7 @@
 				</div>
 			</div>
 		</div>
-		<TheFooter class="mobile:pt-36 desktop:pt-60" />
+		<TheFooter class="mobile:pt-28 desktop:pt-40" />
 	</main>
 </template>
 
