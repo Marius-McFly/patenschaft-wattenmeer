@@ -25,28 +25,28 @@
 					<a
 						target="_blank"
 						href="https://www.snapchat.com/"
-						class="hover:text-black-default transition duration-500"
+						class="hover:opacity-80 transition duration-500"
 					>
 						<div class="mr-4 desktop:mr-8 w-8" v-html="require(`~/static/svg/snapchat-icon.svg?raw`)" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.youtube.com/"
-						class="hover:text-black-default transition duration-500"
+						class="hover:opacity-80 transition duration-500"
 					>
 						<div class="mr-4 desktop:mr-8 w-9" v-html="require(`~/static/svg/youtube-icon.svg?raw`)" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.facebook.com/"
-						class="hover:text-black-default transition duration-500"
+						class="hover:opacity-80 transition duration-500"
 					>
 						<div class="mr-4 desktop:mr-8 w-8" v-html="require(`~/static/svg/facebook-icon.svg?raw`)" />
 					</a>
 					<a
 						target="_blank"
 						href="https://www.instagram.com/"
-						class="hover:text-black-default transition duration-500"
+						class="hover:opacity-80 transition duration-500"
 					>
 						<div class="w-8" v-html="require(`~/static/svg/instagram-icon.svg?raw`)" />
 					</a>
