@@ -1,5 +1,8 @@
 # patenschaft-wattenmeer
 
+This is a school project :)
+I do not own any images, fonts or media files on this page. Be gentle, thanks.
+
 ## Build Setup
 
 ```bash
