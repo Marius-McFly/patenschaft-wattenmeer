@@ -24,6 +24,13 @@
 				<div class="flex items-center mb-6 desktop:mb-0 desktop:mx-auto">
 					<a
 						target="_blank"
+						href="https://www.snapchat.com/"
+						class="hover:text-black-default transition duration-500"
+					>
+						<div class="mr-4 desktop:mr-8 w-8" v-html="require(`~/static/svg/snapchat-icon.svg?raw`)" />
+					</a>
+					<a
+						target="_blank"
 						href="https://www.youtube.com/"
 						class="hover:text-black-default transition duration-500"
 					>
