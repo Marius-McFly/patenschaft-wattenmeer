@@ -22,10 +22,16 @@
 				</NuxtLink>
 			</div>
 		</div>
-		<div :class="['relative mb-8 desktop:mb-0 desktop:flex-1 h-1/2', {'desktop:order-3 desktop:ml-32': isFirstItem}, {'desktop:order-1 desktop:mr-32': !isFirstItem}]">
-			<img v-img class="w-full relative z-[3] rounded-3xl" :src="image" alt="">
-			<div v-if="!isInfographic" class="bg-blue-100 z-[2] h-full absolute top-0 w-full transform rotate-[-5deg] rounded-3xl" />
-			<div v-if="!isInfographic" class="bg-beige-default h-full absolute z-[1] top-0 w-full transform rotate-[-10deg] rounded-3xl" />
+		<div :class="['relative mb-8 desktop:mb-0 desktop:flex-1 h-1/2 group', {'desktop:order-3 desktop:ml-32': isFirstItem}, {'desktop:order-1 desktop:mr-32': !isFirstItem}]">
+			<div :class="['rounded-3xl overflow-hidden shadow-inner', {'shadow-2xl py-10': isInfographic}]">
+				<img v-img class="w-full relative z-[3] transition-all duration-500 group-hover:transform group-hover:scale-[1.2] overflow-hidden" :src="image" alt="">
+			</div>
+			<div v-if="!isInfographic" class="bg-blue-100 z-[2] transition-all duration-500 group-hover:transform group-hover:rotate-0 h-full absolute top-0 w-full transform rotate-[-5deg] rounded-3xl" />
+			<div v-if="!isInfographic" class="bg-beige-default transition-all duration-500 group-hover:transform group-hover:rotate-0 h-full absolute z-[1] top-0 w-full transform rotate-[-10deg] rounded-3xl" />
+			<div
+				:class="['right-8 bottom-10 h-6 w-6 absolute z-40 text-white shadow-2xl pointer-events-none group-hover:animate-ping', {'text-black-default': isInfographic}, {'text-white': !isInfographic}]"
+				v-html="require(`~/static/svg/zoom-out-icon.svg?raw`)"
+			/>
 		</div>
 		<NuxtLink to="/mitmachen">
 			<AppButton
