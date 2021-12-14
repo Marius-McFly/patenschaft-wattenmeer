@@ -2,7 +2,7 @@
 	<div
 		class=""
 	>
-		<div class="flex items-center">
+		<div class="flex items-center relative">
 			<label :class="['order-2', {'font-bold': item.value === 'Förderverein Nationalpark'}]">
 				{{ item.value }}
 			</label>
@@ -12,8 +12,12 @@
 				:type="item.type"
 				:name="item.name"
 				:value="item.value"
-				class="order-1 cursor-pointer mr-2 h-4 w-4 bg-white appearance-none z-10 checked:bg-green-default rounded transition ease-in-out duration-500"
+				class="order-1 cursor-pointer mr-2 h-4 w-4 bg-white appearance-none z-10 rounded transition ease-in-out duration-500"
 			>
+			<div
+				class="check text-black-default w-3 h-3 absolute z-10 left-[2px] top-[7px] opacity-0 pointer-events-none transition-all duration-500"
+				v-html="require(`~/static/svg/check-icon.svg?raw`)"
+			/>
 		</div>
 	</div>
 </template>
@@ -48,5 +52,8 @@ export default {
 </script>
 
 <style>
+    input:checked + .check {
+        opacity: 100;
+    }
 
 </style>
