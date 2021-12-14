@@ -96,9 +96,9 @@ module.exports = {
 					}
 				],
 				'3xl': [
-					'72px',
+					'60px',
 					{
-						lineHeight: '86.4px'
+						lineHeight: '72px'
 					}
 				]
 			}
