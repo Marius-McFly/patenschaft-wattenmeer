@@ -3,7 +3,7 @@
 		<img
 			v-if="fullHeroImage"
 			:src="fullHeroImage"
-			:class="['absolute object-cover h-full w-full desktop:max-w-[1920px] widescreen:max-w-[3840px] desktop:rounded-br-[100px] desktop:rounded-bl-[100px] rounded-bl-[40px] rounded-br-[40px]', {'transform scale-x-[-1]': isLanding}, {'rounded-tl-[40px] rounded-tr-[40px] desktop:rounded-tl-[100px] desktop:rounded-tr-[100px]': isSection}]"
+			:class="['absolute object-cover h-full w-full desktop:max-w-[1920px] widescreen:max-w-[3840px]', {'transform scale-x-[-1]': isLanding}]"
 			alt=""
 		>
 		<img
@@ -18,7 +18,7 @@
 		/>
 		<div
 			v-if="fullHeroImage"
-			:class="['absolute opacity-80 bg-gradient-to-r from-black-default h-full w-full desktop:max-w-[1920px] widescreen:max-w-[3840px] desktop:rounded-br-[100px] desktop:rounded-bl-[100px] rounded-bl-[40px] rounded-br-[40px]', {'rounded-tl-[40px] rounded-tr-[40px] dektop:rounded-tl-[100px] desktop:rounded-tr-[100px]': isSection} ]"
+			:class="['absolute opacity-80 bg-gradient-to-r from-black-default h-full w-full desktop:max-w-[1920px] widescreen:max-w-[3840px]', {'': isSection} ]"
 		/>
 		<div :class="['relative flex-col h-full w-full flex', {'text-black-default justify-start pt-32 desktop:pt-0 desktop:justify-center': !fullHeroImage }, {'justify-center text-white': fullHeroImage } ]">
 			<div :class="['custom-container w-full items-center', {'flex': !fullHeroImage}, {'pt-20 desktop:pt-[128px]': fullHeroImage && !isSection}, {'pt-0 desktop:pt-0': fullHeroImage && isSection}]">

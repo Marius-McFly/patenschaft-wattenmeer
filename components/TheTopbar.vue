@@ -1,6 +1,6 @@
 <template>
 	<nav
-		class="fixed z-[1000] w-full flex items-center justify-center py-4 px-6 transition-all duration-500 ease-in-out bg-white shadow-2xl desktop:h-40"
+		class="fixed z-[1000] w-full flex items-center justify-center py-4 px-6 transition-all duration-500 ease-in-out bg-white shadow-2xl desktop:h-40 rounded-br-3xl rounded-bl-3xl desktop:rounded-br-[60px] desktop:rounded-bl-[60px]"
 		:class="isOpen ? 'h-screen py-20' : 'h-20'"
 	>
 		<div :class="['desktop:grid desktop:grid-cols-[max-content,max-content,max-content] desktop:items-center desktop:justify-center', {'h-auto': isOpen}, {'h-20': !isOpen}]">
