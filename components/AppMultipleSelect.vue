@@ -3,7 +3,7 @@
 		class=""
 	>
 		<div class="flex items-center relative">
-			<label :class="['order-2', {'font-bold': item.value === 'Förderverein Nationalpark'}]">
+			<label class="order-2">
 				{{ item.value }}
 			</label>
 			<input
