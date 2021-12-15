@@ -17,7 +17,7 @@
 					<NuxtLink class="mb-1 inline-block w-max after:block after:w-0 cursor-pointer after:h-[2px] after:bg-black-default after:transition-[width] after:duration-500 hover:after:w-full desktop:mr-4 desktop:mb-0" to="/">
 						Datenschutz
 					</NuxtLink>
-					<NuxtLink class="mb-1 inline-block w-max after:block after:w-0 cursor-pointer after:h-[2px] after:bg-black-default after:transition-[width] after:duration-500 hover:after:w-full desktop:mb-0" to="/">
+					<NuxtLink class="mb-1 inline-block w-max after:block after:w-0 cursor-pointer after:h-[2px] after:bg-black-default after:transition-[width] after:duration-500 hover:after:w-full desktop:mb-0" to="/impressum">
 						Impressum
 					</NuxtLink>
 				</div>
