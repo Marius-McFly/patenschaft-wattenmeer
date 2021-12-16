@@ -1,5 +1,5 @@
 <template>
-	<ul class="grid desktop:grid-cols-[max-content,max-content,max-content,max-content] mobile:gap-4 desktop:gap-10">
+	<ul class="grid desktop:grid-cols-[max-content,max-content,max-content,max-content,max-content,max-content,max-content,max-content] mobile:gap-4 desktop:gap-8">
 		<li
 			v-for="navigationItem in navigationItems"
 			:key="navigationItem.name"

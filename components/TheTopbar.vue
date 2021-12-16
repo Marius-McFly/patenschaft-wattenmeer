@@ -1,14 +1,16 @@
 <template>
 	<nav
-		class="fixed z-[1000] w-full flex items-center justify-center py-4 px-6 transition-all duration-500 ease-in-out bg-white shadow-2xl desktop:h-40 rounded-br-3xl rounded-bl-3xl desktop:rounded-br-[60px] desktop:rounded-bl-[60px]"
+		class="fixed z-[1000] w-full flex items-center justify-center py-4 px-6 transition-all duration-500 ease-in-out bg-white shadow-2xl desktop:h-40 rounded-br-3xl rounded-bl-3xl desktop:rounded-br-[60px] desktop:rounded-bl-[60px] desktop:px-10"
 		:class="isOpen ? 'h-screen py-20' : 'h-20'"
 	>
-		<div :class="['desktop:grid desktop:grid-cols-[max-content,max-content,max-content] desktop:items-center desktop:justify-center', {'h-auto': isOpen}, {'h-20': !isOpen}]">
-			<PageNavigation class="hidden desktop:grid justify-self-center" :navigation-items="navigationItems.slice(0, 4)" />
+		<div :class="['desktop:grid desktop:grid-cols-[max-content,1fr,max-content] desktop:items-center desktop:justify-center w-full desktop:max-w-7xl', {'h-auto': isOpen}, {'h-20': !isOpen}]">
 			<NuxtLink to="/">
-				<img class="top-4 z-50 left-8 fixed w-full max-w-[104px] desktop:static desktop:mx-14 desktop:max-w-[180px]" src="/svg/wattenmeer-logo.svg" alt="">
+				<img class="top-4 z-50 left-8 fixed w-full max-w-[104px] desktop:ml-8 desktop:static desktop:max-w-[180px]" src="/svg/wattenmeer-logo.svg" alt="">
 			</NuxtLink>
-			<PageNavigation class="hidden desktop:grid justify-self-center" :navigation-items="navigationItems.slice(4, 8)" />
+			<PageNavigation class="hidden desktop:grid justify-self-end items-center mt-[3px]" :navigation-items="navigationItems" />
+			<AppButton class="hidden desktop:block desktop:py-3" primary-button>
+				Kontakt →
+			</AppButton>
 			<div
 				class="flex items-center w-full justify-end fixed right-8 top-8 desktop:hidden z-0"
 			>
@@ -63,17 +65,6 @@ export default {
 				{
 					name: 'Presse',
 					routePath: '/presse'
-				},
-
-				{
-					name: 'Impressum',
-					routePath: '/impressum'
-
-				},
-
-				{
-					name: 'Kontakt',
-					routePath: '/kontakt'
 				}
 			]
 		}
