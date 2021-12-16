@@ -65,6 +65,11 @@ export default {
 				{
 					name: 'Presse',
 					routePath: '/presse'
+				},
+
+				{
+					name: 'Kontakt',
+					routePath: '/kontakt'
 				}
 			]
 		}
