@@ -12,7 +12,7 @@
   }
 
   .custom-container {
-    @apply px-8 phablet:px-40 tablet:px-64 desktop:px-0 desktop:max-w-[1200px] desktop:mx-auto;
+    @apply px-8 phablet:px-40 tablet:px-64 desktop:px-16 desktop:max-w-[1200px] desktop:mx-auto;
   }
 
   .custom-container-small {
