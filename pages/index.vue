@@ -9,6 +9,40 @@
 			is-landing
 		/>
 		<div class="custom-container py-20 desktop:py-[104px]">
+			<div class="grid items-center justify-center gap-8 grid-cols-[max-content] phablet:grid-cols-[max-content,max-content,max-content] desktop:gap-20">
+				<a
+					target="_blank"
+					href="https://www.nationalpark-wattenmeer.de/"
+					class="cursor-pointer"
+				>
+					<div
+						class="w-24 desktop:w-52"
+						v-html="require(`~/static/svg/main-logo-black.svg?raw`)"
+					/>
+				</a>
+				<a
+					target="_blank"
+					href="https://www.nationalpark-wattenmeer.de/schuetzen/weltnaturerbe/"
+					class="cursor-pointer"
+				>
+					<div
+						class="w-24 desktop:w-52"
+						v-html="require(`~/static/svg/logo_welterbe.svg?raw`)"
+					/>
+				</a>
+				<a
+					target="_blank"
+					href="https://www.nationalpark-wattenmeer.de/schuetzen/weltnaturerbe/"
+					class="cursor-pointer"
+				>
+					<img
+						src="../static/img/wswh_logo_de_small.jpg"
+						class="w-24 desktop:w-52"
+					>
+				</a>
+			</div>
+		</div>
+		<div class="custom-container py-20 desktop:py-[104px]">
 			<ImageText
 				:title="content.imageText[0].title"
 				:text="content.imageText[0].text"
