@@ -8,9 +8,11 @@
 				<img class="top-4 z-50 left-8 fixed w-full max-w-[104px] desktop:ml-8 desktop:static desktop:max-w-[180px]" src="/svg/wattenmeer-logo.svg" alt="">
 			</NuxtLink>
 			<PageNavigation class="hidden desktop:grid justify-self-end items-center mt-[3px]" :navigation-items="navigationItems" />
-			<AppButton class="hidden desktop:block desktop:py-3" primary-button>
-				Kontakt →
-			</AppButton>
+			<NuxtLink to="/kontakt">
+				<AppButton class="hidden desktop:block desktop:py-3" primary-button>
+					Kontakt →
+				</AppButton>
+			</NuxtLink>
 			<div
 				class="flex items-center w-full justify-end fixed right-8 top-8 desktop:hidden z-0"
 			>
