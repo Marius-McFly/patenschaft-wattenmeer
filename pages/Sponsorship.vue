@@ -16,7 +16,7 @@
 				<div class="w-[104px] bg-white h-1 rounded mt-8 mb-20" />
 				<AppCardCollection
 					:items="content.cardSection.cardItems"
-					is-icon-card
+					is-default-icon-card
 				/>
 				<AppButton
 					class="mt-20"

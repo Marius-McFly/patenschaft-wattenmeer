@@ -1,12 +1,12 @@
 <template>
 	<div
-		:class="['grid grid-cols-1 desktop:grid-cols-2 w-full max-w-lg phablet:max-w-full', {'gap-20 desktop:gap-24': isIconCard }, {'gap-20 desktop:gap-40': !isIconCard }]"
+		:class="['grid grid-cols-1 desktop:grid-cols-2 w-full max-w-lg phablet:max-w-full', {'gap-20 desktop:gap-24': isDefaultIconCard }, {'gap-20 desktop:gap-40': !isDefaultIconCard }]"
 	>
 		<AppCard
 			v-for="item in items"
 			:key="item.icon"
 			:item="item"
-			:is-icon-card="isIconCard"
+			:is-default-icon-card="isDefaultIconCard"
 		/>
 	</div>
 </template>
@@ -19,7 +19,7 @@ export default {
 			default: () => ([])
 		},
 
-		isIconCard: {
+		isDefaultIconCard: {
 			type: Boolean,
 			default: false
 		}

@@ -66,38 +66,38 @@ export default {
 					buttonText: 'Hier mitmachen →',
 					cardItems: [
 						{
-							number: '01',
 							title: 'Qualität der Bildung',
-							text: 'Inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern.'
+							text: 'Inklusive, gleichberechtigte und hochwertige Bildung gewährleisten und Möglichkeiten lebenslangen Lernens für alle fördern.',
+							icon: 'book-icon.svg'
 						},
 						{
-							number: '02',
 							title: 'Nachhaltige Städte und Gemeinden',
-							text: 'Städte und Siedlungen inklusiv, sicher, widerstandsfähig und nachhaltig gestalten. Verantwortungsvoll'
+							text: 'Städte und Siedlungen inklusiv, sicher, widerstandsfähig und nachhaltig gestalten. Verantwortungsvoll',
+							icon: 'city-icon.svg'
 
 						},
 						{
-							number: '03',
 							title: 'Konsumieren und Produzieren',
-							text: 'Nachhaltige Konsum- und Produktionsmuster sicherstellen.'
+							text: 'Nachhaltige Konsum- und Produktionsmuster sicherstellen.',
+							icon: 'people-carry-icon.svg'
 
 						},
 						{
-							number: '04',
 							title: 'Handeln für den Klimaschutz',
-							text: 'Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen.'
+							text: 'Umgehend Maßnahmen zur Bekämpfung des Klimawandels und seiner Auswirkungen ergreifen.',
+							icon: 'solar-panel-icon.svg'
 
 						},
 						{
-							number: '05',
 							title: 'Leben unter Wasser',
-							text: 'Ozeane, Meere und Meeresressourcen im Sinne nachhaltiger Entwicklung erhalten und nachhaltig nutzen.'
+							text: 'Ozeane, Meere und Meeresressourcen im Sinne nachhaltiger Entwicklung erhalten und nachhaltig nutzen.',
+							icon: 'bubble-icon.svg'
 
 						},
 						{
-							number: '06',
 							title: 'Leben an Land',
-							text: 'Landökosysteme schützen, wiederherstellen und ihre nachhaltige Nutzung fördern, Wälder nachhaltig bewirtschaften, Wüstenbildung bekämpfen, Bodendegradation beenden und umkehren und dem Verlust der biologischen Vielfalt ein Ende setzen.'
+							text: 'Landökosysteme schützen, wiederherstellen und ihre nachhaltige Nutzung fördern, Wälder nachhaltig bewirtschaften, Wüstenbildung bekämpfen, Bodendegradation beenden und umkehren und dem Verlust der biologischen Vielfalt ein Ende setzen.',
+							icon: 'hand-holding-seedling-icon.svg'
 
 						}
 					]
