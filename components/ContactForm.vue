@@ -30,6 +30,7 @@
 		<div class="grid grid-cols-1 gap-4 desktop:grid-cols-2 desktop:gap-8">
 			<AppButton
 				class="desktop:max-w-full"
+				is-white
 				border-button
 			>
 				Senden
@@ -37,7 +38,6 @@
 			<AppButton
 				border-button
 				class="desktop:max-w-full"
-				is-white
 				@click="clearForm()"
 			>
 				Zurück
