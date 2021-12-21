@@ -69,7 +69,7 @@ export default {
 				],
 				cardSection: {
 					title: 'Die Patenschaft fördert die Zielsetzungen von Nationalpark und Biosphärenreservat ideell und materiell durch Aktivitäten insbesondere zur…',
-					buttonText: 'Hier mitmachen →',
+					buttonText: 'Pate werden →',
 					cardItems: [
 						{
 							icon: 'leaf-icon.svg',

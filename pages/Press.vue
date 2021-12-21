@@ -58,7 +58,7 @@ export default {
 						title: 'Zahlen und Fakten',
 						text: 'Die durch einen Meeresspiegelanstieg am stärksten gefährdeten europäischen Küstengebiete befinden sich im östlichen England, an den Nordseeküsten der Niederlande, Belgiens, Deutschlands und Dänemarks sowie in der Poebene Italiens. Aber auch die südlichen Ostseeküstengebiete sind an zahlreichen Stellen bedroht. Die folgende Infografik zeigt gefährdete Küsten bei einem Meeresspiegelanstieg von 1m bzw. 5m.',
 						imagePath: '/img/meeresspiegel-infografik.png',
-						buttonText: 'Hier mitmachen →'
+						buttonText: 'Pate werden →'
 					}
 				]
 			}
