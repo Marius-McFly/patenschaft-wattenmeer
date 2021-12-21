@@ -1,7 +1,7 @@
 <template>
 	<form
 		class="text-white w-full"
-		@submit.prevent="handleSubmit()"
+		@submit.prevent="onSubmit"
 	>
 		<div class="grid grid-cols-1 gap-4 desktop:grid-cols-2 desktop:gap-8">
 			<AppTextInput
@@ -153,10 +153,12 @@ export default {
 	},
 
 	methods: {
-		onSubmit () {
+
+		showPopup () {
 			this.popUpState = true
 			setTimeout(() => { this.popUpState = false }, 3000)
 		},
+
 		clearForm () {
 			this.inputDataCollection.firstName = ['']
 			this.inputDataCollection.lastName = ['']
@@ -168,9 +170,9 @@ export default {
 			this.inputDataCollection.message = ['']
 		},
 
-		handleSubmit () {
+		onSubmit () {
 			if (this.inputDataCollection.email[0]) {
-				this.onSubmit()
+				this.showPopup()
 				setTimeout(() => { this.clearForm() }, 3000)
 			}
 		}
