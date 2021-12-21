@@ -23,7 +23,7 @@
 		<div :class="['relative flex-col h-full w-full flex', {'text-black-default justify-start pt-32 desktop:pt-0 desktop:justify-center': !fullHeroImage }, {'justify-center text-white': fullHeroImage } ]">
 			<div :class="['custom-container w-full items-center', {'flex': !fullHeroImage}, {'pt-20 desktop:pt-[128px]': fullHeroImage && !isSection}, {'pt-0 desktop:pt-0': fullHeroImage && isSection}]">
 				<div :class="{'flex-1 desktop:mr-20': !fullHeroImage}">
-					<h1 class="mb-2 desktop:max-w-[800px] desktop:mb-4">
+					<h1 class="mb-2 desktop:max-w-[600px] desktop:mb-4">
 						{{ title }}
 					</h1>
 					<div
