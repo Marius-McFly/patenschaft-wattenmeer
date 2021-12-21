@@ -8,7 +8,7 @@
 			:button-text="content.pageHero.buttonText"
 			is-landing
 		/>
-		<div class="custom-container py-20 desktop:py-[104px]">
+		<div class="custom-container pb-0 pt-20 desktop:pb-10 desktop:pt-[104px]">
 			<div class="grid items-center justify-center gap-8 grid-cols-[max-content] phablet:grid-cols-[max-content,max-content,max-content] desktop:gap-20">
 				<a
 					target="_blank"
