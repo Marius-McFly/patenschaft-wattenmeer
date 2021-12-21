@@ -87,7 +87,7 @@ export default {
 						title: 'UNESCO Weltnaturerbe',
 						text: 'Mit der Anerkennung als UNESCO Weltnaturerbe sind Deutschland, Dänemark und die Niederlande auch gegenüber der Weltgemeinschaft verpflichtet, den außergewöhnlichen universellen Wert der Natur im Wattenmeer zu erhalten. Darüber hinaus gehört Naturschutz zu den Funktionen eines UNESCO-Biosphärenreservats. ',
 						imagePath: '/img/christian-paul-stobbe-bJEasxPTOUw-unsplash.jpg',
-						buttonText: 'Hier mitmachen →'
+						buttonText: 'Pate werden →'
 					}
 				]
 			}

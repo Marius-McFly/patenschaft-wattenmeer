@@ -67,7 +67,7 @@
 							alt=""
 						>
 					</div>
-					<NuxtLink to="/mitmachen">
+					<NuxtLink to="/kontakt">
 						<AppButton
 							v-if="fullHeroImage && !isJoinIn"
 							border-button
@@ -75,7 +75,7 @@
 							{{ buttonText }}
 						</AppButton>
 					</NuxtLink>
-					<NuxtLink :to="title === 'Kontakt' ? '#email' : '/mitmachen'">
+					<NuxtLink :to="title === 'Kontakt' ? '#email' : '/kontakt'">
 						<AppButton
 							v-if="!fullHeroImage"
 							class="relative z-50"

@@ -50,14 +50,13 @@ export default {
 						title: 'Mitmachen',
 						subtitle: '„Wir sind die erste Generation, die die Armut beenden kann und die letzte Generation, die Maßnahmen ergreifen kann, um die schlimmsten Auswirkungen des Klimawandels zu vermeiden.“',
 						quoteAuthor: 'Ban Ki-moon',
-						imagePath: '/img/510489_neu.jpg',
-						buttonText: 'Hier mitmachen →'
+						imagePath: '/img/510489_neu.jpg'
 					},
 					{
 						title: 'Werde aktiv und mache mit!',
 						subtitle: 'Es gibt zahlreiche Möglichkeiten, in den Nationalparks mitzuarbeiten. Freiwillige Dienste, verschiedene Formen von Praktika - und manchmal gibt es auch eine freie Stelle in den Nationalparkverwaltungen.',
 						imagePath: '/img/Wattenmeer_Nordsee.jpg',
-						buttonText: 'Hier mitmachen →'
+						buttonText: 'Pate werden →'
 					}
 				],
 				cardSection: {

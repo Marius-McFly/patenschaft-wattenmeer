@@ -18,12 +18,14 @@
 					:items="content.cardSection.cardItems"
 					is-default-icon-card
 				/>
-				<AppButton
-					class="mt-20"
-					border-button
-				>
-					{{ content.cardSection.buttonText }}
-				</AppButton>
+				<NuxtLink class="w-full flex justify-center" to="/mitmachen">
+					<AppButton
+						class="mt-20"
+						border-button
+					>
+						{{ content.cardSection.buttonText }}
+					</AppButton>
+				</NuxtLink>
 			</div>
 		</div>
 		<div class="custom-container pb-10 phablet:py-20 desktop:py-[104px]">

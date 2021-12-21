@@ -26,7 +26,7 @@
 					:items="content.cardSection.cardItems"
 					is-default-icon-card
 				/>
-				<NuxtLink to="/mitmachen">
+				<NuxtLink class="w-full flex justify-center" to="/mitmachen">
 					<AppButton
 						class="mt-20"
 						border-button
@@ -69,7 +69,7 @@ export default {
 				],
 				cardSection: {
 					title: 'Die Patenschaft fördert die Zielsetzungen von Nationalpark und Biosphärenreservat ideell und materiell durch Aktivitäten insbesondere zur…',
-					buttonText: 'Hier mitmachen →',
+					buttonText: 'Pate werden →',
 					cardItems: [
 						{
 							icon: 'leaf-icon.svg',
